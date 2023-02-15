@@ -4,6 +4,7 @@ import "react-multi-carousel/lib/styles.css";
 import img1 from "../assets/img/java.png"
 import img2 from "../assets/img/python.png"
 import img3 from "../assets/img/js.png"
+import img4 from "../assets/img/robot.png"
 import colorSharp from "../assets/img/color-sharp.png"
 
 export const Skills = () => {
@@ -53,8 +54,8 @@ export const Skills = () => {
                                     <h5>JavaScript</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={img1} alt="Image" />
-                                    <h5>Web Development</h5>
+                                    <img src={img4} alt="Image" />
+                                    <h5>Machine Learning</h5>
                                 </div>
                             </Carousel>
                         </div>
