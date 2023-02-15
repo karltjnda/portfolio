@@ -317,8 +317,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 
-/* Projects */
-/************ Skills Css ************/
+/* Skills */
 .skill {
   padding: 0 0 50px 0;
   position: relative;
@@ -346,25 +345,25 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .skill-slider {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   position: relative;
 }
 
 .skill-slider .item img {
-  width: 50%;
+  width: 30%;
   margin: 0 auto 15px auto;
 }
 
 .background-image-left {
-  top: 28%;
+  top: 24%;
   position: absolute;
-  bottom: 0;
-  width: 40%;
+  bottom: 100%;
+  width: 100%;
   z-index: -4;
 }
 
-/************ Projects Css ************/
+/* proect */
 .project {
   padding: 80px 0;
   position: relative;
