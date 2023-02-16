@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
+import Connect from "../pages/Connect.js"
 import logo from '../assets/img/logo.svg';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
@@ -8,6 +10,12 @@ import navIcon3 from '../assets/img/nav-icon3.svg';
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
+
+  const navigate = useNavigate();
+
+  function handleClick() {
+    navigate("/connect");
+  }
 
   useEffect(() => {
     const onScroll = () => {
@@ -26,6 +34,7 @@ export const NavBar = () => {
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
   };
+
 
   return (
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
@@ -54,7 +63,7 @@ export const NavBar = () => {
                 <img src={navIcon3} alt="" />
               </a>
             </div>
-            <button className="vvd">
+            <button className="vvd" onClick={handleClick}>   
               <span>Let’s Connect</span>
             </button>
           </span>

@@ -29,28 +29,25 @@ export const Projects = () => {
             <Container>
                 <Row>
                     <Col>
+                    <div className="skill-bx">
                         <h2>Projects</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dapibus orci eget neque auctor vestibulum. Duis commodo vitae magna a scelerisque. Phasellus neque felis, varius eget tincidunt ut, dictum id nulla. Fusce tristique suscipit condimentum. Suspendisse tristique euismod lorem, et luctus urna pharetra varius. Etiam eget malesuada dui. Morbi eget faucibus risus. Curabitur fermentum dui id elit tempus, vitae bibendum turpis porttitor. In tristique et metus nec iaculis. Curabitur tempus ornare porttitor. Nulla ac massa non dui molestie eleifend eu ut ex. Cras feugiat tincidunt enim, at volutpat mauris maximus vel. Cras malesuada, velit nec rhoncus sollicitudin, ex tellus auctor orci, ut vehicula lacus risus et enim. Curabitur ut consequat dui. Etiam et luctus tortor. Proin rutrum massa nisl, in efficitur nisi gravida vel.</p>
-                        <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                        <Nav variant="pills" defaultActiveKey="/home">
-                        </Nav>
-                                <Row>
-                                    {
-                                        projects.map((project, index) => {
-                                            return (
-                                                <ProjectCard 
-                                                key={index}
-                                                {...project}
-                                                />
-                                            )
-                                        }) 
-                                    }
-                                </Row>
-                        </Tab.Container>
+                            <Row>
+                                {
+                                    projects.map((project, index) => {
+                                        return (
+                                            <ProjectCard 
+                                            key={index}
+                                            {...project}
+                                            />
+                                        )
+                                    }) 
+                                }
+                            </Row>
+                        </div>
                     </Col>
                 </Row>
             </Container>
-            <img className="background-image-right" src={colorSharp2}></img>
         </section>
     )
 }
