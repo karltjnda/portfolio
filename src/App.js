@@ -7,22 +7,22 @@ import  {Connect}  from "./pages/Connect";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Fragment } from "react";
 
 function App() {
   return (
     <div className="App">
       <NavBar />
       <Routes>
-        <Route path='/'
+        <Route exact path='/'
           element={
-            <Fragment>
+            <>
                 <Banner />
                 <Skills />
                 <Projects />
-            </Fragment>
+            </>
           }
           />
+          <Route path="/skills" element={<Skills/>} />
           <Route path="/connect" element={<Connect />} />
       </Routes>
     </div>
