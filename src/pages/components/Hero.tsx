@@ -1,5 +1,7 @@
 import Image from 'next/image';
 
+const prefix = "/portfolio"
+
 export default function Hero() {
 
     return (
@@ -12,7 +14,7 @@ export default function Hero() {
                 </div>
                 <div className="mx-auto text-black relative z-30">
                     <Image
-                        src="/pic.jpg"
+                        src={prefix + "/pic.jpg"}
                         width={600}
                         height={600}
                         alt="Picture of the author"
