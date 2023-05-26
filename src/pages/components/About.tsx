@@ -23,7 +23,7 @@ export default function About() {
                                 <div className='flex items-center justify-center'>
                                     <div className='px-4 text-center'>
                                         <Image
-                                            src={`${prefix}java.png`}
+                                            src={`${prefix}/java.png`}
                                             height={100}
                                             width={100}
                                             alt="Java"
