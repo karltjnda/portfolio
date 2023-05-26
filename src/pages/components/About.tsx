@@ -1,13 +1,14 @@
 import Image from "next/image"
 
 export default function About() {
+    const prefix = "/portfolio"
     return (
         <section id="about">
             <div className="bg-yellow-500">
                 <div className="flex flex-row items-center h-screen w-full">
                     <div className="flex items-start justify-center">
                         <Image
-                            src="/pic2.jpg"
+                            src={`${prefix}/pic2.jpg`}
                             alt="pogi"
                             width={500}
                             height={500}
@@ -22,7 +23,7 @@ export default function About() {
                                 <div className='flex items-center justify-center'>
                                     <div className='px-4 text-center'>
                                         <Image
-                                            src="/java.png"
+                                            src={`${prefix}java.png`}
                                             height={100}
                                             width={100}
                                             alt="Java"
@@ -31,7 +32,7 @@ export default function About() {
                                     </div>
                                     <div className='px-4 text-center'>
                                         <Image
-                                            src="/js.png"
+                                            src={`${prefix}/js.png`}
                                             height={100}
                                             width={100}
                                             alt="JavaScript"
@@ -40,7 +41,7 @@ export default function About() {
                                     </div>
                                     <div className='px-4 text-center'>
                                         <Image
-                                            src="/python.png"
+                                            src={`${prefix}/python.png`}
                                             height={100}
                                             width={100}
                                             alt="Python"
@@ -49,7 +50,7 @@ export default function About() {
                                     </div>
                                     <div className='px-4 text-center'>
                                         <Image
-                                            src="/sql1.png"
+                                            src={`${prefix}/sql1.png`}
                                             height={100}
                                             width={100}
                                             alt="MySQL"
