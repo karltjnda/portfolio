@@ -7,6 +7,7 @@ import Image from 'next/image';
 export default function Header() {
     const [navbar, setNavbar] = useState(false)
     const router = useRouter()
+    const prefix = "/portfolio"
     const navLink = [
         {
             name: "Home",
@@ -43,7 +44,7 @@ export default function Header() {
                     ))}
                     <Link href="https://www.linkedin.com/in/karl-tabajonda/" target="_blank">
                         <Image
-                            src="/linkedin.png"
+                            src={`${prefix}/linkedin.png`}
                             alt="LinkedIn"
                             height={30}
                             width={25}>

@@ -14,7 +14,7 @@ export default function Hero() {
                 </div>
                 <div className="mx-auto text-black relative z-30">
                     <Image
-                        src={prefix + "/pic.jpg"}
+                        src={`${prefix}/pic.jpg`}
                         width={600}
                         height={600}
                         alt="Picture of the author"
